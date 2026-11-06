@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>จองห้องประชุม - ตัวอย่างดีไซน์ Liquid Glass</title>
+<link rel="preload" href="../fonts/noto-sans-thai-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav class="top glass-clear">
+    <p class="brand"><strong>จองห้องประชุม</strong> <span>ตัวอย่างดีไซน์ Liquid Glass</span></p>
+    <div class="who">
+      <span>ผู้ใช้ตัวอย่าง</span>
+      <button type="button" class="glass-clear quiet">ออกจากระบบ</button>
+    </div>
+  </nav>
+
+  <main>
+    <h1>จองห้องประชุม</h1>
+
+    <section class="subject glass-clear">
+      <h2 class="subject-name">ห้องประชุมตัวอย่าง A</h2>
+      <p class="subject-code">RM-0142</p>
+      <dl>
+        <dt>วันที่</dt>
+        <dd>15 มกราคม 2569</dd>
+        <dt>เวลา</dt>
+        <dd>13:00 - 15:00 น.</dd>
+        <dt>ที่นั่ง</dt>
+        <dd>12 ที่นั่ง</dd>
+      </dl>
+    </section>
+
+    <form action="#" class="glass-thick">
+      <label for="topic">เรื่องที่ประชุม</label>
+      <input type="text" id="topic" name="topic" autocomplete="off">
+      <label for="room">รหัสห้อง</label>
+      <input type="text" id="room" name="room" class="mono" value="RM-0142" autocomplete="off">
+      <p class="hint">รหัสห้องอยู่บนบัตรด้านบน ตรวจให้ตรงกันก่อนบันทึก</p>
+      <div class="actions">
+        <button type="submit">บันทึกการจอง</button>
+        <button type="reset" class="glass-clear quiet">ล้างข้อมูล</button>
+      </div>
+    </form>
+
+    <h2>ข้อความแจ้ง</h2>
+    <p class="msg ok" role="status">บันทึกการจองแล้ว ห้องนี้เป็นของคุณในเวลาที่เลือก</p>
+    <p class="msg info" role="status">หน้านี้หมดอายุแล้ว รายการยังไม่ถูกบันทึก กรุณาทำอีกครั้ง</p>
+    <p class="msg err" role="alert">บันทึกไม่สำเร็จ เพราะห้องนี้ถูกจองแล้ว กรุณาเลือกเวลาอื่น</p>
+
+    <h2>ผลการจอง</h2>
+    <ul class="results glass-thick">
+      <li class="is-updated"><span>ห้องประชุมตัวอย่าง A</span><span class="st-updated">จองสำเร็จ</span></li>
+      <li class="is-failed"><span>ห้องประชุมตัวอย่าง B</span><span class="st-failed">จองไม่สำเร็จ</span></li>
+      <li class="is-none"><span>ห้องประชุมตัวอย่าง C</span><span class="st-none">ไม่มีข้อมูล</span></li>
+    </ul>
+  </main>
+</div>
+</body>
+</html>
